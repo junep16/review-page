@@ -1,0 +1,103 @@
+/* reset */
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* 컨테이너 */
+.container {
+    position: relative;
+    width: 608px;
+    height: 500px;
+    border-radius: 10px;
+    background: #333333;
+    margin: 50px auto;
+}
+
+/* 영화 포스터 */
+.poster { 
+    position: absolute;
+    top: 50%; 
+    left: -64px; 
+    transform: translate(0, -50%);
+
+} 
+.poster > img {
+    width: 281px;
+    height: 396px; 
+    border-radius: 10px;
+}
+
+/* 영화 소개 */
+.container-info { 
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 107px; 
+    width: 250px;
+    height: 396px; 
+    color: white;
+}
+.container-info .txt{
+    display: inline-block;
+    font-size: 16px;
+    color: #BDBDBD;
+}
+.container-info .genre::after {
+    content: '|';
+    margin-left: 5px;
+}
+.container-info .movie-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+.container-info .container-icon {
+    position: relative;
+}
+.container-info .container-icon .icon{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.container-info .container-icon .icon.one.thumbsUp{
+    background-color: #2F80ED;
+}
+.container-info .container-icon .icon.two{
+    margin-left: 10px;
+}
+.container-info .container-icon .icon.two.like{
+    background-color: #EB5757;
+}
+.container-info .container-icon .icon img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+}
+.container-info .movie-average {
+    color: #F2F2F2;
+    margin: 22px 0;
+}
+.stars{
+    display: flex; 
+    flex-direction: row;
+    padding: 0; 
+}
+.stars img {   
+    width: 50px;
+    cursor: pointer;
+}
+/* .stars li::after {    
+    content: "";
+    background: url('src/images/half_star.png') no-repeat 50% 50%; 
+    width: 50px;
+    height: 50px;
+} */
+
+
+
